@@ -55,4 +55,15 @@ if (number % 2==0):
 else:
     print('it is a odd number')    
     
-    
+    print()
+
+    #ex8
+""""    Write code that asks the user for their name and determines whether or not you have the same name, print out a funny message based on the outcome."""
+myname="vasili"
+
+user_name=input('please enter your name:')
+
+if (user_name == user_name):
+    print('ha-ha, we have same names')
+else:
+    print('i like your name')    
