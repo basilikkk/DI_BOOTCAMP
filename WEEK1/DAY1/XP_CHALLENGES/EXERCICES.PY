@@ -45,4 +45,14 @@ b=7
 if a>b:
     print("hello world")
 
+
+    #ex7
+"""Write code that asks the user for a number and determines whether this number is odd or even.    """
+
+number=int(input('please enter a number'))
+if (number % 2==0):
+    print('it is a even number')
+else:
+    print('it is a odd number')    
+    
     
