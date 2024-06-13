@@ -49,16 +49,27 @@ items = {'apple':'5$', 'waffles':"12$", 'computer':'1004$', 'sausage':'15$','dog
 
 deposit=int(input('type please how much you have in your wallet'))
 
-items_sorted=dict(sorted((items.items()),key=lambda item: int(item[1].replace('$',''))))
+converted_items={item:int(price.replace('$','').replace(',','')) for item, price in items.items()}
+
+items_sorted=dict(sorted((converted_items.items()),key=lambda item: item[1]))
 
 print(items_sorted)
 
-sum=0
-a=[]
-for key, int(value.replace('$','')) in items_sorted:
-   if sum <deposit:
-      sum+=int(value.replace('$',''))
-      a.append(key)
-print(a)  
+purchased_items=[]
+total_cost=0
 
-      
+for item, price in items_sorted.items():
+    if total_cost+price <=deposit:
+        purchased_items.append(item)
+        total_cost+=price
+    else:
+        break    
+
+
+
+
+
+if purchased_items:
+    print(purchased_items.sort())
+else:
+    print('Nothing')        
