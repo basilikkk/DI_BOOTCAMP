@@ -1,0 +1,7 @@
+comma_sep_str=input('please enter a comma separated sequence of words ')
+list_comma_str=comma_sep_str.split(',')
+print(list_comma_str)
+ordered_list=sorted(list_comma_str)
+print(ordered_list)
+comma_sep_str_ordered=', fd '.join(ordered_list)
+print(comma_sep_str_ordered)
