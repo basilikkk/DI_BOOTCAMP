@@ -1,3 +1,6 @@
+"""Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+Use List Comprehension"""
+
 comma_sep_str=input('please enter a comma separated sequence of words ')
 list_comma_str=comma_sep_str.split(',')
 ordered_list=sorted(list_comma_str)
