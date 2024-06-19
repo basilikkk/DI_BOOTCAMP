@@ -30,7 +30,7 @@ class Dog:
             return 'It is a tie'
 
 # Create 3 instances of the Dog class
-dog1 = Dog('', 4, 20)
+dog1 = Dog('Pimp', 4, 20)
 dog2 = Dog('Rex', 5, 25)
 dog3 = Dog('Milo', 3, 15)
 print(dog1.bark())          
