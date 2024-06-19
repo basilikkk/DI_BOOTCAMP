@@ -8,57 +8,52 @@ class Circle:
             self._radius = diameter / 2
         else:
             raise ValueError("Either radius or diameter must be provided.")
-
-    @property
-    def radius(self):
+    
+    def get_radius(self):
         return self._radius
-
-    @radius.setter
-    def radius(self, value):
+    
+    def set_radius(self, value):
         self._radius = value
-
-    @property
-    def diameter(self):
+    
+    def get_diameter(self):
         return self._radius * 2
-
-    @diameter.setter
-    def diameter(self, value):
+    
+    def set_diameter(self, value):
         self._radius = value / 2
-
-    def area(self):
+    
+    def get_area(self):
         return math.pi * (self._radius ** 2)
-
+    
     def __str__(self):
         return f"Circle with radius: {self._radius}"
-
+    
     def __repr__(self):
         return f"Circle(radius={self._radius})"
-
+    
     def __add__(self, other):
         if isinstance(other, Circle):
             return Circle(radius=self._radius + other._radius)
         return NotImplemented
-
+    
     def __lt__(self, other):
         if isinstance(other, Circle):
             return self._radius < other._radius
         return NotImplemented
-
+    
     def __eq__(self, other):
         if isinstance(other, Circle):
             return self._radius == other._radius
         return NotImplemented
 
 # Example usage:
-
 c1 = Circle(radius=3)
 c2 = Circle(diameter=8)
 c3 = Circle(radius=4)
 
 print(c1)  # Circle with radius: 3
-print(c1.radius)  # 3
-print(c1.diameter)  # 6
-print(c1.area())  # 28.274333882308138
+print(c1.get_radius())  # 3
+print(c1.get_diameter())  # 6
+print(c1.get_area())  # 28.274333882308138
 
 c4 = c1 + c3
 print(c4)  # Circle with radius: 7
