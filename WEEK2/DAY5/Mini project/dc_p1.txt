@@ -1,0 +1,15 @@
+A class is a blueprint for creating objects that encapsulates data attributes and methods for manipulating that data.
+
+Instance: An instance is a specific object created from a class, with its own unique set of data attributes.
+
+Encapsulation: Encapsulation is the concept of bundling data and methods within a class and restricting direct access to some of the object's components.
+
+Abstraction: Abstraction is the concept of hiding complex implementation details and showing only the essential features of an object.
+
+Inheritance: Inheritance is a mechanism where a new class derives properties and behavior (methods) from an existing class.
+
+Multiple Inheritance: Multiple inheritance is a feature where a class can inherit attributes and methods from more than one parent class.
+
+Polymorphism: Polymorphism is the ability of different classes to respond to the same method name in different ways.
+
+Method Resolution Order (MRO): MRO is the order in which Python looks for a method in a hierarchy of classes, especially important in multiple inheritance to determine which method to invoke.
