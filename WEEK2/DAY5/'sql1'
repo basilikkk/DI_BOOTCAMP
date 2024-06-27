@@ -1,0 +1,3 @@
+delete 
+from houses_expanses
+where date_paid > '2024-02-01'
